@@ -21,5 +21,18 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var bitcoinsTextField: UITextField!
+    @IBOutlet weak var bitcoinsValueLabel: UILabel!
+    
+    
+    @IBAction func convert(_ sender: Any) {
+        if let bitcoinsStringValue = bitcoinsTextField.text {
+            if let bitcoinsValue = Float( bitcoinsStringValue ) {
+                let dollarsValue = bitcoinsValue * 2084
+                
+                bitcoinsValueLabel.text = "Your bitcoins are worth $\(dollarsValue)"
+            }
+        }
+    }
 }
 
