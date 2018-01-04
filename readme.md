@@ -1,4 +1,4 @@
-# Week 2 Lecture Development Example: Bitcoin Converter
+# In Class Development Example: Bitcoin Converter
 
 ### Lecture Development Examples Overview
 
